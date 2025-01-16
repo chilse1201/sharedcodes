@@ -1,0 +1,242 @@
+.navbar-design {
+    width: 100%;
+    height: 65px;
+    background-color: #859f3d;
+    display: flex;
+    justify-content: center;
+}
+
+.error{
+    font-family: "League Spartan";
+    font-size: 15px;
+    height: 5px; /*fixed height of error div haha eto lng*/
+    margin-left: 15px;
+    padding:2px;
+}
+
+.error-message{
+    font-family: "League Spartan";
+    font-size: 15px;
+    height: 5px;
+    margin-left: 15px;
+    padding: 2px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* keyframe for the animation */
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY (30px) scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY (0px) scale(1);
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 100%;
+    padding: 30px 10px;
+    animation: fade-up 2s ease;
+}
+
+.wrapper {
+    background: #e8ecd7;
+    width:100%;
+    max-width: 380px;
+    border-radius: 15px;
+}
+
+/*Back Arrow*/
+.back-arrow i{
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    font-size: 25px;
+    color:#859f3d;
+}
+
+.back-arrow i:hover{
+    color:#23231d;
+    transition: .5s ease;
+}
+
+/* profile picture design */
+.profile img {
+    max-width: 100%;
+    margin-top: 2rem;
+}
+.profile{
+    width: 110px;
+    margin: 0 auto;
+}
+
+/* login title design */
+.wrapper .title {
+    font-family: "League Spartan",serif;
+    line-height: 0.5;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    font-size: 1.8rem;
+    font-weight: 750;
+    /* margin: 20px 0; */
+    padding-top: 2.5rem;
+}
+
+/* login box settings */
+.wrapper{
+    margin-top: -13%;
+    box-shadow: darkgray 0px 30px 90px;
+}
+
+.wrapper form {
+    gap:20px;
+    padding: 25px 30px 25px 30px;
+}
+
+/* design for the class "row", mainly the icon and the textfields */
+.wrapper form .row{
+    margin-top: 25px;
+    height: 45px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.wrapper form .row input{
+    height: 100%;
+    width: 100%;
+    outline:none;
+    padding-left: 55px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+form .row input:focus{
+    border-color:#859f3d;
+    box-shadow: #23231d;
+}
+
+/* icons design */
+.wrapper form .row i{
+    position: absolute;
+    width: 47px;
+    height: 100%;
+    background: #859f3d;
+    color: #fff;
+    font-size: 18px;
+    border: 1px solid #859f3d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 1px 1px 20px;
+}
+
+input[type="text"], input[type="password"]{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+
+/* forgot password design */
+.wrapper form .pass{
+    margin: -10px 0 20px 0;
+}
+.wrapper form .pass a{
+    font-family: "Montserrat", sans;
+    color:#859f3d;
+    text-decoration: none;
+    font-size: 15px; 
+}
+.wrapper form .pass a:hover{
+    text-decoration: underline;
+    color:#859f3d;  
+}
+
+/* submit button design */
+.wrapper form .button input{
+    margin-top: 13px;
+    padding-left: 0px;
+    background: #23231d;
+    border: 1px solid #23231d;
+    color: #fff;
+    cursor: pointer;
+    font-family: "League Spartan";
+    font-size: 19px;
+    font-weight: 700;
+}
+form .button input:hover{
+    background: #383833;
+}
+
+/* register link design */
+.wrapper form .signup-link{
+    font-family: "Montserrat";
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+}
+.wrapper form .signup-link a{
+    color:#859f3d;
+    text-decoration: none;
+    
+}
+form .signup-link a:hover{
+    text-decoration: underline;
+    color:#859f3d;
+}
+
+/* media queries for responsive design */
+@media (max-width: 768px) {
+    .wrapper {
+        width: 95%; 
+        padding: 20px;
+    }
+
+    .wrapper .title {
+        font-size: 1.5rem;
+    }
+
+    .wrapper form .row input {
+        font-size: 14px; 
+    }
+
+    .wrapper form .button input {
+        font-size: 16px;
+    }
+
+    .wrapper form .signup-link {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        width: 90%; 
+        padding: 15px;
+    }
+
+    .wrapper .title {
+        font-size: 1.2rem;
+    }
+
+    .wrapper form .row input {
+        font-size: 12px;
+    }
+
+    .wrapper form .button input {
+        font-size: 14px;
+    }
+
+    .wrapper form .signup-link {
+        font-size: 12px;
+    }
+}
